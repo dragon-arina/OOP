@@ -1,4 +1,5 @@
-package student;
+package v3;
+
 
 import javax.swing.text.DateFormatter;
 import java.text.DateFormat;
@@ -59,4 +60,5 @@ public class Student {
                 ", dateOfBirth=" + new SimpleDateFormat("dd.MM.YYYY").format(dateOfBirth) +
                 '}';
     }
+
 }
