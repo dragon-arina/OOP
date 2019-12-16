@@ -13,6 +13,7 @@ public class Main  {
             firstTask.Add("Norway", "Oslo");
             firstTask.Add("Scotland", "Edinburgh");
             firstTask.Add("Ireland", "Dublin");
+            
 
         System.out.println(firstTask.LookUp("Japan"));
 
