@@ -19,7 +19,7 @@ class Hodor {
        }
 
 
-    public static int getName(HashMap<String, String> map, String name)
+    public static int getSameFirstNameCount(HashMap<String, String> map, String name)
     {
         int count = 0;
         for (Map.Entry<String, String> pair : map.entrySet())
@@ -31,7 +31,7 @@ class Hodor {
         return count;
     }
 
-    public static int getSurname(HashMap<String, String> map, String surname)
+    public static int getSameLastNameCount(HashMap<String, String> map, String surname)
     {
         int count = 0;
         for (Map.Entry<String, String> pair : map.entrySet())
