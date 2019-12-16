@@ -8,13 +8,6 @@ public class ArrayQueueModule {
         return (x + 1) % elements.length;
     }
 
-    private static int dec(int x) {
-        if (x == 0) {
-            return elements.length - 1;
-        } else {
-            return x - 1;
-        }
-    }
 
     private static void ensureCapacity(int sz) {
         if ((elements.length <= sz) || (sz * 4 < elements.length)) {
