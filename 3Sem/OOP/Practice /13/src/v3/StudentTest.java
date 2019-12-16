@@ -9,8 +9,8 @@ public class StudentTest {
         Student student = new Student();
         student.setDateOfBirth(new Date(1521893256000L));
         student.setGroup("IKBO 16-18");
-        student.setLastName("Nefedov");
-        student.setName("Andrey");
+        student.setLastName("Irina");
+        student.setName("Shayk");
         System.out.println(student.toString());
 
     }
