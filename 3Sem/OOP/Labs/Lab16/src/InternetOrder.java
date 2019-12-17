@@ -1,5 +1,5 @@
 public class InternetOrder implements Order {
-    //private String address;
+
     private CycleDoubleLinkedList<Item> items;
     public InternetOrder() {
         items = new CycleDoubleLinkedList<>();

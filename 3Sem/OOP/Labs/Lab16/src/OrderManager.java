@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 public class OrderManager {
-    //private CycleDoubleLinkedList<Order> orders;
+
     private HashMap<Integer, Order> restaurantMap = new HashMap<>();
     private HashMap<String, Order> internetMap = new HashMap<>();
     public void add(int tableNumber, Order order) {
