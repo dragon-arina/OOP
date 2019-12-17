@@ -1,9 +1,9 @@
 public class Run {
     public static void main(String[] args) {
-        Item[] itemsArray = new Item[] {new Dish(14.3, "Fish"), new Drink(25.1, "Hot_Spring"), new Dish(2.1, "Popcorn"), new Drink(19.2, "Hot_Spring")};
+        Item[] itemsArray = new Item[] {new Dish(14.3, "Fish"), new Drink(25.1, "Pibimpab"), new Dish(2.1, "Cheasecake"), new Drink(19.2, "Vodka")};
         InternetOrder order = new InternetOrder(itemsArray);
         order.show();
-        order.add(new Drink(66.2, "Devil_Spice"));
+        order.add(new Drink(66.2, "Devil Mix"));
         order.show();
 
         System.out.println(order.size());
