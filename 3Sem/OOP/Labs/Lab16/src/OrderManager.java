@@ -36,12 +36,7 @@ public class OrderManager {
         checkOrderExist(address);
         internetMap.remove(address);
     }
-    /*public int freeTableNumber() {
 
-    }
-    public int [] freeTableNumbers() {
-
-    }*/
     public Order [] getOrders() {
         return internetMap.values().toArray(new Order[internetMap.values().size()]);
     }

@@ -51,11 +51,5 @@ public final class Dish implements Item {
     }
     public void setCost (double cost) {
         this.cost = cost;
-    }/*
-    public void setName (String name) {
-        this.name = name;
     }
-    public void setDescription (String description) {
-        this.description = description;
-    }*/
 }

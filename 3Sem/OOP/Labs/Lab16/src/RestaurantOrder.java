@@ -8,14 +8,7 @@ public class RestaurantOrder implements Order {
         items = new CycleDoubleLinkedList<>();
         items.create(itemsArray);
     }
-    /*public RestaurantOrder(Item[] itemsArray, int tableNumber) {
-        items = new CycleDoubleLinkedList<>();
-        items.create(itemsArray);
-        this.tableNumber = tableNumber;
-    }
-    public int getTableNumber() {
-        return tableNumber;
-    }*/
+
     public void show() {
         items.show();
         System.out.print("\n");

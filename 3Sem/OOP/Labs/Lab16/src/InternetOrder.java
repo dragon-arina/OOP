@@ -8,14 +8,7 @@ public class InternetOrder implements Order {
         items = new CycleDoubleLinkedList<>();
         items.create(itemsArray);
     }
-    /*public InternetOrder(Item[] itemsArray, String address) {
-        items = new CycleDoubleLinkedList<>();
-        items.create(itemsArray);
-        this.address = address;
-    }*/
-    /*public String getAddress () {
-        return address;
-    }*/
+
     public void show() {
         items.show();
         System.out.print("\n");

@@ -5,9 +5,9 @@ public class Run {
         order.show();
         order.add(new Drink(66.2, "Devil_Spice"));
         order.show();
-        //order.removeAll("Hot_Spring");
+
         System.out.println(order.size());
-        //order.show();
+
         Item [] itemsOrder = order.getItemsArray();
         for (int i = 0; i < order.size(); i++)
             System.out.print(itemsOrder[i] + " ");
