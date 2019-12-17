@@ -1,5 +1,5 @@
 public class RestaurantOrder implements Order {
-    //private int tableNumber;
+
     private CycleDoubleLinkedList<Item> items;
     public RestaurantOrder() {
         items = new CycleDoubleLinkedList<>();
