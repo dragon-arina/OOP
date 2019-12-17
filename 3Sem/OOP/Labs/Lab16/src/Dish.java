@@ -5,12 +5,6 @@ public final class Dish implements Item {
     private final String name;
     private final String description;
     public Dish (String name, String description) {
-        try {
-            if (name.isEmpty() || description.isEmpty())
-                throw new IllegalArgumentException();
-        } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
-        }
         this.cost = zero;
         this.name = name;
         this.description = description;
