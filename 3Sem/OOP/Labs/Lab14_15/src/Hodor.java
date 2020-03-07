@@ -10,7 +10,7 @@ class Hodor {
            map.put("Sandra", "Bullock");
            map.put("Joaquin", "Phoenix");
            map.put("Leonardo", "DiCaprio");
-           map.put("Johnny", "Depp");
+           map.put("Depp", "Johnny");
            map.put("Margot", "Robbie");
            map.put("Bradley", "Cooper");
            map.put("Lady", "Gaga");

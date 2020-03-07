@@ -5,6 +5,6 @@ public class FunctionalChair implements Chair {
 
     @Override
     public String toString() {
-        return "Ну стул нужен чтобы сидеть";
+        return "";
     }
 }

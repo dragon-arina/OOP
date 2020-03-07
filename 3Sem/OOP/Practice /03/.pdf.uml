@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="490.0" y="806.0">META-INF</node>
+    <node x="218.0" y="354.0">Circle</node>
+    <node x="252.0" y="806.0">groovyjarjarasm</node>
+    <node x="679.0" y="806.0">groovy</node>
+    <node x="109.75" y="0.0">Shape</node>
+    <node x="0.0" y="880.0">org</node>
+    <node x="1.0" y="321.0">Rectangle</node>
+    <node x="457.0" y="0.0">groovyjarjarcommonscli</node>
+    <node x="0.0" y="620.0">Square</node>
+    <node x="0.0" y="806.0">groovyjarjarantlr</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Circle" target="Shape">
+      <point x="0.0" y="-91.5" />
+      <point x="315.0" y="296.0" />
+      <point x="256.0" y="296.0" />
+      <point x="48.75" y="135.5" />
+    </edge>
+    <edge source="Rectangle" target="Shape">
+      <point x="0.0" y="-124.5" />
+      <point x="99.5" y="296.0" />
+      <point x="158.5" y="296.0" />
+      <point x="-48.75" y="135.5" />
+    </edge>
+    <edge source="Square" target="Rectangle">
+      <point x="0.0" y="-70.5" />
+      <point x="0.0" y="124.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="222.5" y="321.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
