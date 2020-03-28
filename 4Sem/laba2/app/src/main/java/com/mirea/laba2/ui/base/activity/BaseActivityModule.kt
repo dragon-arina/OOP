@@ -6,6 +6,8 @@ import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
 import com.mirea.laba2.di.scope.AppActivityScope
+import com.mirea.laba2.util.navigator.Navigator
+import com.mirea.laba2.util.navigator.NavigatorImpl
 import dagger.Module
 import dagger.Provides
 
@@ -32,5 +34,9 @@ class BaseActivityModule {
     @Provides
     @AppActivityScope
     internal fun provideLifecycleOwner(activity: BaseActivity): LifecycleOwner = activity
+
+    @Provides
+    @AppActivityScope
+    internal fun provideNavigator(impl: NavigatorImpl): Navigator = impl
 
 }

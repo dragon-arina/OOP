@@ -1,13 +1,14 @@
-package com.sainote.waveshackathon.ui.base.viewmodel
+package com.mirea.laba2.ui.base.viewmodel
 
 import androidx.databinding.Observable
 import androidx.databinding.PropertyChangeRegistry
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
+import androidx.lifecycle.ViewModel
 import javax.inject.Inject
 
-open class BaseViewModelSimple(private val lifecycle: Lifecycle) : Observable, LifecycleObserver
+open class BaseViewModelSimple(private val lifecycle: Lifecycle) : Observable, LifecycleObserver, ViewModel()
 {
     @Transient
     private var mCallbacks: PropertyChangeRegistry? = null
