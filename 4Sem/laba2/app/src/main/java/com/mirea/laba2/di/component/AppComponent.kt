@@ -4,7 +4,7 @@ import android.app.Application
 import com.mirea.laba2.App
 import com.mirea.laba2.di.module.ActivityInjectorModule
 import com.mirea.laba2.di.module.ApplicationModule
-import com.sainote.waveshackathon.di.module.NetworkModule
+import com.mirea.laba2.di.module.NetworkModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule

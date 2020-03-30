@@ -1,6 +1,6 @@
 package com.mirea.laba2.ui.splash
 
-import android.os.Handler
+import androidx.lifecycle.observe
 import com.mirea.laba2.R
 import com.mirea.laba2.databinding.ActivitySplashBinding
 import com.mirea.laba2.ui.base.activity.BaseActivity
@@ -19,10 +19,7 @@ class SplashActivity: BaseActivity(R.layout.activity_splash) {
 
     override fun onStart() {
         super.onStart()
-        binding.get().lifecycleOwner = this
-        Handler().postDelayed({
-            navigator.openMainScreen()
-        }, 2000)
+        binding.get().viewmodel?.data?.observe (this) { data -> navigator.openMainScreen(data) }
     }
 
 }

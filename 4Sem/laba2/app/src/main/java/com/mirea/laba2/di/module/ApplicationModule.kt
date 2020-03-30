@@ -6,7 +6,6 @@ import com.mirea.laba2.BuildConfig
 import com.mirea.laba2.data.preferences.PreferencesManager
 import com.mirea.laba2.data.preferences.PreferencesManagerImpl
 import com.mirea.laba2.di.qualifier.PreferencesInfo
-import com.sainote.waveshackathon.di.module.NetworkModule
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

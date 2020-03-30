@@ -6,6 +6,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
 import androidx.lifecycle.ViewModel
+import com.mirea.laba2.data.network.response.MainScreenListResponse
 import javax.inject.Inject
 
 open class BaseViewModelSimple(private val lifecycle: Lifecycle) : Observable, LifecycleObserver, ViewModel()
@@ -43,6 +44,8 @@ open class BaseViewModelSimple(private val lifecycle: Lifecycle) : Observable, L
         }
         mCallbacks!!.remove(callback)
     }
+
+    open fun onItemClick(item: MainScreenListResponse) {}
 
     /**
      * Notifies listeners that all properties of this instance have changed.

@@ -11,17 +11,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import androidx.viewpager.widget.ViewPager
-import com.google.android.material.textfield.TextInputLayout
+import com.mirea.laba2.ui.info.pager.ViewPagerAdapter
 import com.mirea.laba2.util.DataBindingAdapter
-import java.util.HashMap
-
-@BindingAdapter("visibility")
-fun setVisibility(view: View, visible: Boolean) {
-    if (visible) view.visibility = View.VISIBLE else view.visibility = View.GONE
-}
 
 @BindingAdapter("visible")
-fun setVisibile(view: View, visible: Boolean) {
+fun setVisible(view: View, visible: Boolean) {
     if (visible) view.visibility = View.VISIBLE else view.visibility = View.INVISIBLE
 }
 
@@ -33,6 +27,13 @@ fun SwipeRefreshLayout.setOnRefresh(listener: SwipeRefreshLayout.OnRefreshListen
 @BindingAdapter("app:isrefreshing")
 fun SwipeRefreshLayout.setIsRefreshing(refreshing: Boolean) {
     this.isRefreshing = refreshing
+}
+
+@BindingAdapter("app:vpAdapter", "app:currentItem")
+fun ViewPager.setBinding(vpAdapter: ViewPagerAdapter?, currentItem: Int) {
+    this.adapter = vpAdapter
+    this.currentItem = currentItem
+    this.offscreenPageLimit = 3
 }
 
 @BindingAdapter(
@@ -96,14 +97,8 @@ fun ViewPager.useOnPageChangeListener(listener: ViewPager.OnPageChangeListener) 
 }
 
 @BindingAdapter("app:imageLink")
-fun ImageView.setImageLink(link: String) {
+fun ImageView.setImageLink(link: String?) {
     this.loadImage(link = link)
-}
-
-
-@BindingAdapter("app:url")
-fun loadImage(view: ImageView?, url: String?) {
-    url?.let { view?.loadWithoutCrop(url) }
 }
 
 @BindingAdapter("app:logResult")

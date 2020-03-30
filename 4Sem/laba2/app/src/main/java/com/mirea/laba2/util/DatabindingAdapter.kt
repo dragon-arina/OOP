@@ -70,9 +70,9 @@ class DataBindingAdapter<T>(
         var viewmodel: Any?
     ) : BaseViewHolder(binding?.root!!) {
         fun bind(item: T, even: Boolean) {
-            binding?.apply {/*
+            binding?.apply {
                 setVariable(BR.item, item)
-                setVariable(BR.viewmodel, viewmodel)*/
+                setVariable(BR.viewmodel, viewmodel)
                 //setVariable(BR.even, even)
                 executePendingBindings()
                 if (context is BaseActivity)

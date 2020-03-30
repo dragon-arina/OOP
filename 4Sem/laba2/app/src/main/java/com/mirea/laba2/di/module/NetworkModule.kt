@@ -1,4 +1,4 @@
-package com.sainote.waveshackathon.di.module
+package com.mirea.laba2.di.module
 
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.mirea.laba2.BuildConfig
@@ -9,6 +9,7 @@ import dagger.Provides
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
@@ -33,6 +34,7 @@ open class NetworkModule {
             .client(okHttpClient)
             .baseUrl(BuildConfig.BASE_SERVER_URL_RU)
             .addCallAdapterFactory(CoroutineCallAdapterFactory())
+            .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
 

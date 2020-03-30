@@ -7,14 +7,14 @@ apply plugin: "kotlin-android-extensions"
 android {
 
     def PREF_NAME = "\"WAVES_HACK_PREFS\""
-    def BASE_URL_RU_PROD = "\"https://raw.githubusercontent.com/wesleywerner/ancient-tech/02decf875616dd9692b31658d 92e64a20d99f816/src/\""
-    def BASE_URL_RU_TEST = "\"https://raw.githubusercontent.com/wesleywerner/ancient-tech/02decf875616dd9692b31658d 92e64a20d99f816/src/\""
+    def BASE_URL_RU_PROD = "\"https://raw.githubusercontent.com/wesleywerner/ancient-tech/02decf875616dd9692b31658d92e64a20d99f816/src/\""
+    def BASE_URL_RU_TEST = "\"https://raw.githubusercontent.com/wesleywerner/ancient-tech/02decf875616dd9692b31658d92e64a20d99f816/src/\""
     def STRING = "String"
 
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "com.sainote.waveshackathon"
+        applicationId "com.mirea.laba2"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
