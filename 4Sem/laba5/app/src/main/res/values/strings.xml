@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">lab5</string>
+    <string name="start">Start</string>
+    <string name="liked">liked</string>
+    <string name="like">Like</string>
+    <string name="dislike">dislike</string>
+</resources>
