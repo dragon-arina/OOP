@@ -22,3 +22,5 @@ class ExampleInstrumentedTest {
         assertEquals("com.mirea.laba2", appContext.packageName)
     }
 }
+
+

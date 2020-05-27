@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">lab6</string>
+    <string name="admin">Админ</string>
+    <string name="basket">Корзина</string>
+    <string name="add_to_basket">Добавить в корзину</string>
+    <string name="buy">Купить</string>
+    <string name="add_new">Добавить новый</string>
+    <string name="delete">Удалить</string>
+    <string name="change">Изменить</string>
+    <string name="add">Добавить</string>
+    <string name="description">Описание</string>
+    <string name="count">Количество</string>
+    <string name="price">Цена</string>
+    <string name="name">Имя</string>
+</resources>
